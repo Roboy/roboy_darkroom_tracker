@@ -91,7 +91,8 @@ ts4231 #(16_000_000) ts(
 	.clk(clock_16MHz),
 	.rst(1'b0),
 	.D(data[0]),
-	.E(envelope[0])
+	.E(envelope[0]),
+	.sensor_STATE({mosi,ss_n,sck})
 );
 
 endmodule
